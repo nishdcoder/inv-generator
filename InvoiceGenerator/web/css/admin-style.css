@@ -1,0 +1,153 @@
+/*
+ * Author: nishdcoder;
+ * Author URI: http://nishdcoder.com;
+ *
+ * Project: VA Invoice Generator.
+ * 
+ * Theme Styling
+ */
+
+@charset "utf-8";
+
+/* Custom Style */
+body {
+	background-color: #f1f1f1;
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+body * {
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+.admin-form-container {
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3% 0 0;
+}
+
+.admin-form-container h1 {
+	margin-bottom: 15px;
+}
+
+.admin-form-container h1 a {
+	width: 170px;
+	height: 170px;
+	margin: auto;
+	background-image: url('../img/valogo.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 170px 170px;
+	outline: 0;
+	display: block;
+	text-indent: -9999px;
+}
+
+/*
+ * Login Form Styling
+ */
+.admin-form {
+	width: 320px;
+	overflow: hidden;
+	padding: 25px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 1px 3px #c0c0c0;
+}
+
+.admin-form p {	margin: 0; padding: 0; }
+.admin-form label { font-size: 14px; vertical-align: middle; cursor: pointer; }
+
+.admin-form input.admin-input {
+	width: 100%;
+	margin: 5px 0px 16px 0;
+	font-size: 24px;
+	padding: 2px 2px;
+	font-weight: normal;
+	border-radius: 1px;
+	border: 1px solid #ddd;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+}
+
+.admin-form input.admin-input:focus {
+	outline: 0;
+	box-shadow: 0px 0px 3px 0px #545654;
+	border-color: #999999;
+}
+
+.admin-form p.forgetmenot {
+	float: left;
+}
+
+.admin-form input[type="checkbox"], .inv-checkbox {
+	display: inline-block;
+	vertical-align: middle;
+	clear: none;
+	width: 17px;
+	height: 17px;
+	-webkit-appearance: none;
+	margin-top: 2px;
+	margin-left: 0px;
+	background: #fff;
+	border-radius: 0;
+	border: 1px solid #999999;
+	outline: 0;
+}
+.admin-form input[type="checkbox"]:before, .inv-checkbox:before {	display: inline-block; }
+
+.admin-form input[type="checkbox"]:focus, .inv-checkbox:focus { box-shadow: 0px 0px 1px 0px #545654; border-color: #545654; }
+.admin-form input[type="checkbox"]:checked:before, .inv-checkbox:checked:before {
+	content: "\2713";
+	color: #E41E25;
+	line-height: 15px;
+	font-size: 15px;
+	display: block;
+}
+
+.admin-form p.submit { float: right; }
+
+/* 
+ * Theme Button Styling
+ */
+.btn-primary {
+	padding: 5px 10px;
+	background-color: #888;
+	color: #fff;
+	border: 1px solid #666;
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0 1px 0 #C0C0C0,0 1px 0 #ccc;
+	box-shadow: inset 0 1px 0 #C0C0C0, 0 1px 0 #ccc;
+	outline: 0;
+	font-size: 14px;
+	position: relative;
+}
+.btn-primary:hover { border-color: #333; background-color: #666; }
+.btn-primary:active, { background-color: #545654; }
+
+.btn-add-new {
+	padding: 3px 5px;
+	background-color: #e0e0e0;
+	color: #0074a2;
+	border: 1px solid #e0e0e0;
+	border-radius: 2px;
+	outline: 0;
+	font-size: 13px;
+	position: relative;
+}
+.btn-add-new:focus {
+	-webkit-box-shadow: 0px 0px 3px 0px #0074a2;
+	box-shadow: 0px 0px 3px 0px #0074a2;
+}
+.btn-add-new:hover, .btn-add-new:active {
+	background-color: #888;
+	color: #fff;
+	border-color: #888;
+}
