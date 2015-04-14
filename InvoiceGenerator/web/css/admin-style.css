@@ -130,7 +130,7 @@ body * {
 	position: relative;
 }
 .btn-primary:hover { border-color: #333; background-color: #666; }
-.btn-primary:active, { background-color: #545654; }
+.btn-primary:active { background-color: #545654; }
 
 .btn-add-new {
 	padding: 3px 5px;
