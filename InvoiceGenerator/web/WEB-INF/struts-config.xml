@@ -7,7 +7,7 @@
 
 <struts-config>
     <form-beans>
-    <form-bean name="userAddForm" type="com.project.invoicegenerator.UserAddFB" />
+    <form-bean name="userLoginForm" type="com.project.invoicegenerator.UserLoginFB" />
     </form-beans>
     
     <global-exceptions>
@@ -19,9 +19,9 @@
     </global-forwards>
 
     <action-mappings>
-        <action name="userAddForm"  path="/UserLogin" type="com.project.invoicegenerator.UserAction">
-            <forward name="success" path="/index.jsp"/>
-            <forward name="fail" path="LoginPage.jsp"/>
+        <action name="userLoginForm"  path="/UserLogin" type="com.project.invoicegenerator.UserAction">
+            <forward name="success" path="/edit.jsp"/>
+            <forward name="fail" path="/LoginPage.jsp"/>
         </action>
     </action-mappings>
     

@@ -43,10 +43,10 @@ public class DatabaseManagement {
             System.out.println("---------------->"+userVO.getStrUsername());
         pstmt.setString(1, userVO.getStrUsername());
         ResultSet relSet = pstmt.executeQuery();
-        if(relSet.next())
-        {
+       
             while(relSet.next())
             {
+                System.out.println("Entered into while");
                 if (BCrypt.checkpw(userVO.getStrPassword(), relSet.getString("password")))
                 {
                     System.out.println("This is true");
@@ -58,9 +58,7 @@ public class DatabaseManagement {
                     return false;
                 }
             }
-        }
-        else
-            return false;
+        
         }
         catch(Exception ex)
         {

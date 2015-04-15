@@ -13,13 +13,13 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
                 <script lang="javascript" type="text/javascript">
-                  
+                    var flag = <%=request.getAttribute("flag")%>;
                     </script>
 	</head>
 	<body>
 		<div class="container">
 			<h1><a href="http://www.victoryads.in/" title="Powered by Victory Innovations">Advertising Company</a></h1>
-                        <form class="admin-form" action="UserLogin.do">
+                        <form class="admin-form" method="POST" action="UserLogin.do">
                             <p><label for="admin-user">Username<input type="text" class="admin-input" name="username" id="admin-user" required></label></p>
                             <p><label for="admin-pass">Password<input type="password" class="admin-input" name="password" id="admin-pass" required></label></p>
 				<p class="forgetmenot"><label for="rememberme"><input type="checkbox" id="rememberme" value="forever"> Remember Me.</label></p>

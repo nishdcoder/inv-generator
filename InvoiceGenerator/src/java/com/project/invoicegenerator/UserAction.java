@@ -35,6 +35,7 @@ public class UserAction extends Action {
         }
         else
         {
+            request.setAttribute("flag", 0);
             return mapping.findForward("fail");
         }
     }
